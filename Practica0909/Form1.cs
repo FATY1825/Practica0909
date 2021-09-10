@@ -51,7 +51,8 @@ namespace Practica0909
 
             foreach (var student in selectAllData())
                 {
-                dgData.Rows.Add();
+                dgData.Rows.Add(student.idStudent, student.fistName, student.lastName,
+                    student.age, student.nationality);
                 }
         }
 
